@@ -43,6 +43,8 @@ aside {
   padding-top: 58px;
   flex-basis: 385px;
   background-color: var(--color-bacground-aside);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 @media screen and (max-width: 480px) {
@@ -104,6 +106,13 @@ ul {
 .main-image {
   display: block;
   margin-bottom: 50px;
+  z-index: 2;
+}
+
+.main-image:hover {
+  transform: scale(150%) translate(64px, 86px);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  z-index: 2;
 }
 
 @media screen and (max-width: 480px) {
@@ -195,6 +204,14 @@ main section {
   line-height: 17px;
 
   color: #000000;
+}
+
+.opacity-text {
+  opacity: 0.7;
+}
+
+.opacity-text:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 480px) {
